@@ -1,0 +1,22 @@
+using System;
+
+namespace AddTwoNumbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            if (args.Length != 2)
+            {
+                Console.WriteLine("Please provide two numbers.");
+                return;
+            }
+
+            int num1 = int.Parse(args[0]);
+            int num2 = int.Parse(args[1]);
+            int sum = num1 + num2;
+
+            Console.WriteLine($"The sum of {num1} and {num2} is {sum}");
+        }
+    }
+}
